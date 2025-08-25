@@ -4,7 +4,7 @@ Array.Sort(orderArray);
 
 for (int i = 0; i < orderArray.Length; i++)
 {
-    if (orderArray[i].Length != 3)
+    if (orderArray[i].Length != 4)
     {
         orderArray[i] = orderArray[i] + "\t - Error";
     }
