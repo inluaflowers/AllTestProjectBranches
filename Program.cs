@@ -3,8 +3,13 @@ string[] pangramWords = pangram.Split(" ");
 string[] reversedWords = new string[pangram.Length];
 string reversedWordsPangram = "";
 
-foreach (string word in pangramWords)
+for (int i = 0; i < pangramWords.Length; i++)
 {
-    char[] chars = word.ToCharArray();
-    Console.WriteLine(chars);
+    char[] chars = pangramWords[i].ToCharArray();
+    Array.Reverse(chars);
+    string newWord = String.Join("", chars);
+    Console.WriteLine(newWord);
+
+
+
 }
