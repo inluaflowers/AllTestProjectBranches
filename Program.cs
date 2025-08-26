@@ -1,11 +1,7 @@
-﻿int invoiceNumber = 1201;
-decimal productShares = 25.4568m;
-decimal subtotal = 2750.00m;
-decimal taxPercentage = .15825m;
-decimal total = 3185.19m;
+﻿/* string first = "Hello";
+string second = "World";
+string result = string.Format("{0} {1}!", first, second);
+Console.WriteLine(result); */
 
-Console.WriteLine($"Invoice Number: {invoiceNumber}");
-Console.WriteLine($"   Shares: {productShares:N3}");
-Console.WriteLine($"   Subtotal: {subtotal:C}");
-Console.WriteLine($"   Tax: {taxPercentage:P2}");
-Console.WriteLine($"   Total: {total:C}");
+string input = "Pad this";
+ Console.WriteLine(input.PadLeft(12));
