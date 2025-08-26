@@ -38,13 +38,27 @@ decimal newProfit = 63000000.0m;
 Console.WriteLine($"Dear {customerName},");
 Console.WriteLine();
 Console.WriteLine($"Currently, you own {currentShares:D2} at a return value of {currentReturn:P2}");
-
-
+Console.WriteLine($"Our new product {newProduct} offers a return of {newReturn:P2}. Given your current volume, your potential proift would be {newProfit:C}.");
 // Your logic here
-
 Console.WriteLine("Here's a quick comparison:\n");
 
 string comparisonMessage = "";
+
+string formattedCurrentProduct = currentProduct.PadRight(20);
+string formattedCurrentReturn = string.Format("{0:P2}", currentReturn).PadRight(10);
+string formattedCurrentProfit = string.Format("{0:C}", currentProfit).PadLeft(5);
+
+string formattedNewProduct = newProduct.PadRight(20);
+string formattedNewReturn = string.Format("{0:P2}", newReturn).PadRight(10);
+string formattedNewProfit = string.Format("{0:C}", newProfit).PadLeft(5);
+
+comparisonMessage += formattedCurrentProduct;
+comparisonMessage += formattedCurrentReturn;
+comparisonMessage += formattedCurrentProfit;
+comparisonMessage += "\n";
+comparisonMessage += formattedNewProduct;
+comparisonMessage += formattedNewReturn;
+comparisonMessage += formattedNewProfit;
 
 // Your logic here
 
