@@ -1,7 +1,9 @@
-﻿decimal price = 67.55m;
-decimal salePrice = 59.99m;
+﻿const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
 
-string yourDiscount = String.Format("You saved {0:C2} off the regular {1:C2} price. ", (price - salePrice), price);
+string quantity = "";
+string output = "";
 
-yourDiscount += $"A discount of {((price - salePrice)/price):P2}!"; //inserted
-Console.WriteLine(yourDiscount);
+// Your work here
+
+Console.WriteLine(quantity);
+Console.WriteLine(output);
